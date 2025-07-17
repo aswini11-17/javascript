@@ -26,6 +26,9 @@
     <select id="operation">
         <option value="add">add</option>
         <option value="multiplication">multiplication</option>
+        <option value="division">division</option>
+        <option value="subtraction">subtraction</option>
+        
     </select>
     <button onclick="calculate()">calculate</button>
     <div id="result">result</div>
@@ -42,6 +45,12 @@
                 switch(operation){
                     case"add":
                     result=num1+num2;
+                        case"multiplication":
+                        result=num1*num2;
+                        case"division":
+                        result=num1/num2;
+                        case"subtraction":
+                        result=num1-num2;
                     break;
                 }
 
