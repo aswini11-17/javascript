@@ -35,6 +35,25 @@
         let obj={id:"1"};
         let stredobj=JSON.stringify(obj);
         console.log(stredobj)
+                //fetch() function
+        // passing the URL of the JSON 
+        //this returns a promise that resolves to a Response object.
+
+        let sample=new Promise((resolve,reject))=>{
+            let workisdone=true;
+            if(workisdone){
+                console.log(("completed"))
+            }
+        }
+        fetch("data.json")
+        .then(res=>res.json())
+        .then(data=>{
+            for(let detail of data.student){
+                console.log(detail)
+            } 
+        })
+
     </script>
 </body>
+
 </html>
